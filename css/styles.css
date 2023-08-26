@@ -1,0 +1,47 @@
+/*BODY*/
+
+Body{
+  /*background-color: #FFFCF6;*/
+  margin: 0;
+}
+p {
+  font-family: 'Lora', Arial, Helvetica, sans-serif;  
+}
+
+h1 {
+  font-size: 48px;
+}
+h2 {
+  font-size: 36px;
+}
+p {
+  font-size: 24px;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/*HEADER*/
+
+header {
+  background-color: #2B7B8C;
+  position: sticky;
+  top: 0px;
+  }
+
+.header-section{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-nav a{
+  padding: 20px;
+  color: #000000;
+  text-decoration: none;
+  font-size: 24px;
+  font-family: Cabin Sketch, Arial, Helvetica, sans-serif;
+}
+
