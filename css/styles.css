@@ -16,7 +16,8 @@ h2 {
   font-family: Cabin Sketch, Arial, Helvetica, sans-serif;
 }
 h3 {
-  font-size: 36px;
+  font-size: clamp(16px, 2vw, 24px);
+  font-family: Indie Flower, Arial, Helvetica, sans-serif;
 }
 p {
   font-size: clamp(16px, 2vw, 20px);
@@ -60,6 +61,13 @@ p {
   margin: 20px;
 }
 
+.back-to-top{
+  display: flex;
+  justify-content: center;
+  margin: 40px;
+  max-width: 100%;
+}
+
 /*HEADER*/
 
 header {
@@ -100,6 +108,7 @@ header {
 .link img {
   max-width: 100%;
   margin-bottom: 20px;
+  border-radius: 10px;
 }
 
 .cta {
@@ -110,5 +119,9 @@ header {
   text-decoration: none;
   color: #ffffff;
   font-size: clamp(16px, 2vw, 20px);
+}
+
+.center-text {
+  text-align: center;
 }
 
