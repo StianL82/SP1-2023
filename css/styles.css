@@ -1,13 +1,14 @@
+@import "imports/variables.css";
+
 html {
   scroll-behavior: smooth;
-  scroll-padding: 110px;
+  scroll-padding: 140px;
 }
-
 
 /*BODY*/
 
 Body{
-  background-color: #F2F2F2;
+  background-color: var(--color-site-background);
   margin: 0;
 }
 
@@ -35,7 +36,11 @@ p {
   margin: 0 auto;
 }
 
-.hero-image img, .image img{
+.hero-image img{
+  width: 100%;
+}
+
+.image img {
   max-width: 100%;
 }
 
@@ -45,23 +50,44 @@ p {
   align-items: center;
   flex-wrap: wrap;
   gap: 40px;
+  margin-bottom: 40px;
 }
 
-.textfield-purple, .textfield-grey {
-  background-color: #D1C8EF;
+.textfield-purple, .textfield-grey, .textfield-dark-green {
+  background-color: var(--color-light-pink);
   padding: 0px 20px;
-  border: 1px solid #000;
+  border: var(--border);
   margin: 20px;
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .textfield-grey {
-  background-color: #D9D9D9;
+  background-color: var(--color-light-grey);
 }
 
-.image {
+.textfield-dark-green{
+  background-color: var(--color-header-footer);
+  color: #ffffff;
+}
+
+.image, .text {
   flex: 1;
   margin: 20px;
+  max-width: 100%;
+}
+
+.image-and-text {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+.image-and-text img {
+  max-width: 100%;
 }
 
 .h2-center {
@@ -76,7 +102,7 @@ p {
 }
 
 .divider img{
-  padding: 60px 0px;
+  padding: 20px 0px;
   max-width: 100%;
   margin: 20px;
 }
@@ -97,9 +123,10 @@ p {
 /*HEADER*/
 
 header {
-  background-color: #2B7B8C;
+  background-color: var(--color-header-footer);
   position: sticky;
   top: 0px;
+  border: var(--border);
   }
 
 .header-section{
@@ -108,7 +135,7 @@ header {
   align-items: center;
 }
 
-.header-nav a{
+.header-nav a, .exhibition-links a{
   padding: 30px;
   color: #000000;
   text-decoration: none;
@@ -122,12 +149,14 @@ header {
 
 .header-logo img{
   max-width: clamp(198px, 20vw, 312px);
+  padding: 10px;
+  margin-left: 20px;
 }
 
 /*FOOTER*/
 
 footer {
-  background-color: #2B7B8C;
+  background-color: var(--color-header-footer);
   padding: 30px;
 }
 
@@ -189,8 +218,8 @@ footer {
 }
 
 .cta {
-  background-color: #2B7B8C;
-  border: 1px solid #000;
+  background-color: var(--color-header-footer);
+  border: var(--border);
   padding: 10px 30px;
   border-radius: 5px;
   text-decoration: none;
@@ -214,7 +243,7 @@ footer {
 
 .explore-row img {
   max-width: clamp(50px, 20vw, 450px);
-  border: 1px solid #000;
+  border: var(--border);
   border-radius: 90%;
 }
 
@@ -223,20 +252,20 @@ footer {
 }
 
 .blue-background {
-  background-color: #A7BADE;
+  background-color: var(--color-light-blue);
   padding: 30px 0px;
 }
 
-.explore-image-row {
+.img-and-text {
   text-align: center;
 }
 
-.explore-image-row p{
+.img-and-text p{
   font-size: clamp(12px, 1vw, 16px);
   margin-top: 2px;
 }
 
-.explore-image-row img, .iandt img {
+.img-and-text img, .iandt img {
   border-radius: 10px;
 }
 
@@ -260,6 +289,44 @@ footer {
   display: flex;
   flex-direction: row;
   max-width: 100%;
+  gap: 20px;
+  flex: 1;
+}
+
+
+/*EXHIBITION PAGE*/
+
+.link-bar {
+  background-color: var(--color-header-footer);
+  padding: 20px;
+}
+
+.exhibition-links {
+  display: flex;
+  justify-content: space-around;
+}
+
+.dt{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dt h2{
+  margin: 0px 0px 40px 0px;
+}
+
+.cost {
+  min-height: 407px;
+}
+
+.evot {
+  min-height: 360px;
+}
+
+.evot-icon {
+  width: 120px;
+  color: #ffffff;
 }
 
 
@@ -304,6 +371,10 @@ footer {
   /*TABLET*/
 @media (max-width: 810px) {
 
+  html {
+    scroll-padding: 90px;
+  }
+
 .container, .iandt, .text-container{
   flex-direction: column;
   gap: 20px;
@@ -324,13 +395,17 @@ header {
   top: 0px;
 }
 
+.header-logo img{
+  margin-left: 0px;
+}
+
 nav {
   position: absolute;
-  background: #F2F2F2;
+  background: var(--color-light-grey);
   padding: 60px;
   top: 81px;
   left: 0px;
-  border: 1px solid #000;
+  border: var(--border);
 }
 
 .header-section {
@@ -393,12 +468,24 @@ nav a {
 
 .textbox {
   max-width: 100%;
-  padding: 0px 20px;
+  padding: 10px 20px;
 }
 
 /*EXPLORE PAGE*/
 .textbox p {
   max-width: 100%;
+}
+
+.iandt {
+  align-items: center;
+}
+
+.cost {
+  min-height: 260px;
+}
+
+.evot {
+  min-height: 220px;
 }
 
 
