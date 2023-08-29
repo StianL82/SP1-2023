@@ -370,8 +370,14 @@ footer {
   flex: 1 auto 1;
 }
 
+.visit-iandt {
+  display: flex;
+  flex-direction: row;
+}
 
-
+.visit-iandt h2 {
+  text-align: center;
+}
 
 
 
@@ -598,13 +604,16 @@ nav a {
 
 
 
-@media (max-width: 600px) { 
+@media (max-width: 620px) { 
 
 /*EXPLORE PAGE*/
 .explore-row {
   gap: 10px;
 }
 
+.visit-iandt {
+  flex-direction: column;
+}
 
 }
 
