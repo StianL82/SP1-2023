@@ -63,16 +63,22 @@
         <section class="iandt visit">
           <div class="textfield-blue location">
             <h2>Location</h2>
-            <p>The museum is located at: </p>
+            <p>The museum is located at:</p>
             <span>Fictional Street 1</span>
             <span>8907 Brønnøysund</span>
             <span>NO-Norway</span>
           </div>
           <div class="textfield-blue admission">
             <h2>Admission</h2>
-            <p>The entrance is free for all.
-              There are guided tours of the museum that leave every hour. These tours are 70 NOK per person and include a handy printed guide of the museum.</p>
-            <p>If you would like to organise a guided tour for your group of 6 or more people, please contact us to arrange the tour.</p>
+            <p>
+              The entrance is free for all. There are guided tours of the museum
+              that leave every hour. These tours are 70 NOK per person and
+              include a handy printed guide of the museum.
+            </p>
+            <p>
+              If you would like to organise a guided tour for your group of 6 or
+              more people, please contact us to arrange the tour.
+            </p>
           </div>
           <div class="textfield-blue hours">
             <h2>Hours</h2>
@@ -88,7 +94,8 @@
         <div class="divider">
           <img
             src="Images/Design/Cafe-skille.png"
-            alt="Divider with a dinosaur scull icon"/>
+            alt="Divider with a dinosaur scull icon"
+          />
         </div>
         <section class="visit-iandt">
           <div class="image-and-text">
@@ -97,7 +104,10 @@
               src="Images/Visit/visit_accessibility-min.jpg"
               alt="Picture of a handicap space on the asphalt"
             />
-            <p>The museum has wheelchair accessibility ramps. It also has audio guides and braille display signs for the visually impaired.</p>
+            <p>
+              The museum has wheelchair accessibility ramps. It also has audio
+              guides and braille display signs for the visually impaired.
+            </p>
           </div>
           <div class="image-and-text">
             <h2>Food and drink</h2>
@@ -105,7 +115,10 @@
               src="Images/Visit/visit_food-and-drink-min.jpg"
               alt="Picture of baked goods in the B.C.S.M. cafe"
             />
-            <p>There is a café attached to the museum where you can get light lunches, soft drinks, coffee, snacks and more.</p>
+            <p>
+              There is a café attached to the museum where you can get light
+              lunches, soft drinks, coffee, snacks and more.
+            </p>
           </div>
           <div class="image-and-text">
             <h2>Shop</h2>
@@ -113,7 +126,11 @@
               src="Images/Visit/visit_shop-min.jpg"
               alt="Picture of the B.C.S.M. gift-shop window"
             />
-            <p>Our shop offers a range of memorabilia from the museum as well as great gifts and activity packs that allow you to continue to explore science even after you’ve left the museum.</p>
+            <p>
+              Our shop offers a range of memorabilia from the museum as well as
+              great gifts and activity packs that allow you to continue to
+              explore science even after you’ve left the museum.
+            </p>
           </div>
         </section>
         <div class="divider dt">
@@ -123,29 +140,74 @@
           />
           <h2>Contact</h2>
         </div>
-            <form class="contact-form" method="POST">
-              <section class="fieldset">
-                <label for="name">Name</label>
-                <input type="text" name="name" id="name" class="form-input">
-                <label for="phone">Phone number</label>
-                <input type="tel" name="phone" id="phone" class="form-input">
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" class="form-input">
-              </section>
-              <section class="fieldset">
-                <label for="message">Message</label>
-                <textarea id="message" name="message" cols="30" rows="10" class="form-input"></textarea>
-              </section>
-            </form>
-      </div wrapper>
-        <div class="back-to-top-button">
-          <a href="#back-to-top">
-            <img
-              src="Images/Design/Back-to-the-top-Button.png"
-              alt="Back to the top button"
-            />
-          </a>
-        </div>
+        <h3 class="center-text">
+          Please contact us if you have any questions or feedback
+        </h3>
+        <form method="POST">
+          <div class="contact-form">
+            <section class="fieldset">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                class="form-input"
+                placeholder="Ola Nordmann"
+                required
+              />
+              <label for="phone">Phone number</label>
+              <input
+                type="tel"
+                name="phone"
+                id="phone"
+                class="form-input"
+                placeholder="+47 987 65 432"
+                required
+              />
+              <label for="email">Email</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                class="form-input"
+                placeholder="test@mail.com"
+                required
+              />
+              <label for="newsletter"
+                >Would you like to sign up for our newsletter?</label
+              >
+              <input
+                type="checkbox"
+                name="newsletter"
+                id="newsletter"
+                class="form-input newsletter"
+                checked
+              />
+            </section>
+            <section class="fieldset">
+              <label for="message">Write us a message</label>
+              <textarea
+                id="message"
+                name="message"
+                cols="30"
+                rows="10"
+                class="form-input"
+              ></textarea>
+            </section>
+          </div>
+          <div class="form-button">
+            <input type="submit" value="Submit" class="cta form-cta" />
+          </div>
+        </form>
+      </div>
+      <div class="back-to-top-button">
+        <a href="#back-to-top">
+          <img
+            src="Images/Design/Back-to-the-top-Button.png"
+            alt="Back to the top button"
+          />
+        </a>
+      </div>
     </main>
     <footer>
       <div class="wrapper">
