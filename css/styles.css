@@ -148,7 +148,7 @@ header {
 }
 
 .header-nav a, .exhibition-links a{
-  padding: 30px;
+  padding: 25px;
   color: #000000;
   text-decoration: none;
   font-size: 24px;
@@ -379,6 +379,48 @@ footer {
   text-align: center;
 }
 
+.contact-form {
+  background-color: var(--color-light-blue);
+  border: var(--border);
+  max-width: 1000px;
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  padding: 20px 0px;
+  padding: 20px 0px;
+}
+
+.contact-form > * {
+  flex: 1;
+}
+
+.fieldset {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-input {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 10px 10px 0px;
+  padding: 10px;
+  align-self: center;
+}
+
+.fieldset label {
+  align-self: center;
+  font-family: Indie Flower;
+}
+
+input, textarea{
+  border-radius: 5px;
+  width: 75%;
+  border: var(--border);
+}
+
+textarea {
+  height: 75%;
+}
 
 
 
