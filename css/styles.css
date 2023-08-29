@@ -30,6 +30,11 @@ p {
   font-size: clamp(16px, 2vw, 20px);
   font-family: 'Lora', Arial, Helvetica, sans-serif;  
 }
+span {
+  font-size: clamp(16px, 2vw, 20px);
+  font-family: 'Lora', Arial, Helvetica, sans-serif;
+  padding: 8px;
+}
 
 .wrapper {
   max-width: 1400px;
@@ -77,6 +82,7 @@ p {
 
 .textfield-blue {
   background-color: var(--color-light-blue);
+  border: var(--border);
 }
 
 .image, .text {
@@ -350,6 +356,23 @@ footer {
 }
 
 
+/*Visit Page*/
+
+.location, .hours {
+  min-height: 406.767px;
+}
+
+.location span {
+  padding: 5px;
+}
+
+.visit {
+  flex: 1 auto 1;
+}
+
+
+
+
 
 
 
@@ -421,6 +444,8 @@ footer {
   /*TABLET*/
 @media (max-width: 810px) {
 
+
+  /*General Tablet*/
   html {
     scroll-padding: 90px;
   }
@@ -430,7 +455,7 @@ footer {
   gap: 20px;
 }
 
-  /*HEADER*/
+  /*Header Tablet*/
 nav{
   display: none;
 }
@@ -486,7 +511,7 @@ nav a {
   justify-content: center;
 }
 
-/*FOOTER*/
+/*Footer Tablet*/
   .footer-content {  
     flex-direction: column;
   }
@@ -501,8 +526,7 @@ nav a {
   }
 
 
-/*MAIN PAGE*/
-
+/*Main Page Tablet*/
 .link img {
   max-width: clamp(120px, 40vw, 240px);
 }
@@ -531,7 +555,7 @@ nav a {
 }
 
 
-/*Exhibition Page*/
+/*Exhibition Page Tablet*/
 .exhibition-links a {
   padding: 15px 10px;
   font-size: 20px;
@@ -549,6 +573,25 @@ nav a {
   min-height: 150px;
 }
 
+
+/*Events Page Tablet*/
+.text h3 {
+  text-align: center;
+}
+
+/*Visit Page Tablet*/
+.textfield-blue {
+  min-width: clamp(280px, 50vw, 500px);
+  max-width: 280px;
+}
+
+.location {
+  min-height: 250px;
+}
+
+.hours {
+  min-height: 360px;
+}
 
 }
 
@@ -584,6 +627,11 @@ nav a {
 .exhibition-links {
   flex-direction: column;
   text-align: center;
+}
+
+/*Visit Page Mobile*/
+.textfield-blue {
+  min-width: clamp(120px, 70vw, 280px);
 }
 
   }
