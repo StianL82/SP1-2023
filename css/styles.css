@@ -382,11 +382,11 @@ footer {
 .contact-form {
   background-color: var(--color-light-blue);
   border: var(--border);
-  max-width: 1000px;
+  max-width: 780px;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   margin: auto;
-  padding: 20px 0px;
   padding: 20px 0px;
 }
 
@@ -422,6 +422,25 @@ textarea {
   height: 75%;
 }
 
+.form-cta{
+  max-width: 300px;
+}
+
+.form-button {
+  clear: both;
+}
+
+.form-button {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  max-width: 100%;
+}
+
+.newsletter{
+  width: 50px;
+  height: 30px;
+}
 
 
 
@@ -639,6 +658,11 @@ nav a {
 
 .hours {
   min-height: 360px;
+}
+
+.contact-form {
+  flex-direction: column;
+  margin: 0px 20px;
 }
 
 }
