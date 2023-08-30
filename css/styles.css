@@ -263,7 +263,7 @@ footer {
   margin: 10px;
 }
 
-.blue-background, .green-background, .site-background {
+.blue-background, .green-background, .site-background, .pink-background {
   background-color: var(--color-light-blue);
   padding: 30px 0px;
 }
@@ -440,6 +440,12 @@ textarea {
 .newsletter{
   width: 50px;
   height: 30px;
+}
+
+
+/*Get Involved Page*/
+.pink-background {
+  background-color: var(--color-light-pink);
 }
 
 
