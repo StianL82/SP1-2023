@@ -126,10 +126,23 @@ span {
   scroll-margin-top: 80px;
 }
 
+.back-to-top-button img {
+  max-width: clamp(100px, 15vw, 180px);
+}
+
 .center-text {
   text-align: center;
   margin: 40px;
 }
+
+.imagehov {
+  transition: transform 0.2s ease-in-out;
+}
+
+.imagehov img:hover{
+  transform: scale(1.1);
+}
+
 
 
 /*HEADER*/
@@ -139,6 +152,7 @@ header {
   position: sticky;
   top: 0px;
   border: var(--border);
+  z-index: 999;
   }
 
 .header-section{
@@ -151,8 +165,13 @@ header {
   padding: 25px;
   color: #000000;
   text-decoration: none;
-  font-size: 24px;
+  font-size: clamp(20px, 2vw, 24px);
   font-family: Cabin Sketch, Arial, Helvetica, sans-serif;
+}
+
+#active {
+  color: #FFFFFF;
+  font-size: clamp(23px, 2vw, 28px);
 }
 
 .hamburger-icon, #menu-checkbox {
@@ -220,13 +239,14 @@ footer {
 }
 
 .link h2 {
-  margin-bottom: 2px;
+  margin-bottom: 18px;
 }
 
 .link img {
   margin-bottom: 20px;
   border-radius: 10px;
   max-width: clamp(160px, 20vw, 300px);
+  border: var(--border);
 }
 
 .cta {
@@ -237,7 +257,27 @@ footer {
   text-decoration: none;
   color: #ffffff;
   font-size: clamp(16px, 2vw, 20px);
+  position: relative;
+  overflow: hidden;
 }
+
+.cta:before {
+  content: "";
+  padding: 10px;
+  background-color: #FFF;
+  transform: rotate(45deg);
+  position: absolute;
+  height: 100px;
+  top: -40px;
+  left: -120px;
+  transition: left ease-in-out 0.7s;
+  opacity: 0.3;
+}
+
+.cta:hover:before {
+  left: 120%;
+}
+
 
 
 /*EXPLORE PAGE*/
@@ -326,6 +366,14 @@ footer {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+.exhibition-links a:hover, .header-nav a:hover {
+  color: #FFF;
+  transform: scale(1.2);
 }
 
 .dt{
@@ -464,7 +512,6 @@ textarea {
 /*Header*/
 .header-nav a {
   padding: 12px;
-  font-size: 22px;
 } 
 
 /*Footer*/
@@ -501,8 +548,7 @@ textarea {
 
   /*HEADER*/
   .header-nav a{
-  padding: 10px;
-  font-size: 20px;
+  padding: 9px;
   }
 
   /*Exhibition Site Extra*/
@@ -582,6 +628,11 @@ nav a {
   display: flex;
   flex-grow: 1;
   justify-content: center;
+}
+
+#active {
+  color: var(--color-header-footer);
+  font-size: 40px;
 }
 
 /*Footer Tablet*/
