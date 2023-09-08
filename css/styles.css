@@ -1,11 +1,19 @@
 @import "imports/variables.css";
+@import "imports/homepage.css";
+@import "imports/explore.css";
+@import "imports/exhibition.css";
+@import "imports/visit.css";
+
+
+
+/* GENERAL CSS THAT APPLIES TO ALL PAGES, HEADER AND FOOTER */
 
 html {
   scroll-behavior: smooth;
   scroll-padding: 140px;
 }
 
-/*BODY*/
+/*Body*/
 
 Body{
   background-color: var(--color-site-background);
@@ -85,6 +93,10 @@ span {
   border: var(--border);
 }
 
+.pink-background {
+  background-color: var(--color-light-pink);
+}
+
 .image, .text {
   flex: 1;
   margin: 20px;
@@ -135,17 +147,16 @@ span {
   margin: 40px;
 }
 
-.imagehov {
+.imagehover {
   transition: transform 0.2s ease-in-out;
 }
 
-.imagehov img:hover{
+.imagehover img:hover{
   transform: scale(1.1);
 }
 
 
-
-/*HEADER*/
+/*Header*/
 
 header {
   background-color: var(--color-header-footer);
@@ -165,7 +176,7 @@ header {
   padding: 25px;
   color: #000000;
   text-decoration: none;
-  font-size: clamp(20px, 2vw, 24px);
+  font-size: clamp(20px, 1vw, 24px);
   font-family: Cabin Sketch, Arial, Helvetica, sans-serif;
 }
 
@@ -184,7 +195,8 @@ header {
   margin-left: 20px;
 }
 
-/*FOOTER*/
+
+/*Footer*/
 
 footer {
   background-color: var(--color-header-footer);
@@ -221,549 +233,7 @@ footer {
   text-align: center;
 }
 
-/*HOME PAGE*/
 
-.link-row {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
-  margin: 0px 20px;
-}
+/* ALL THE MEDIA QUERIES ARE COLLECTED IN THE media.css FILE*/
 
-.link {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.link h2 {
-  margin-bottom: 18px;
-}
-
-.link img {
-  margin-bottom: 20px;
-  border-radius: 10px;
-  max-width: clamp(160px, 20vw, 300px);
-  border: var(--border);
-}
-
-.cta {
-  background-color: var(--color-header-footer);
-  border: var(--border);
-  padding: 10px 30px;
-  border-radius: 5px;
-  text-decoration: none;
-  color: #ffffff;
-  font-size: clamp(16px, 2vw, 20px);
-  position: relative;
-  overflow: hidden;
-}
-
-.cta:before {
-  content: "";
-  padding: 10px;
-  background-color: #FFF;
-  transform: rotate(45deg);
-  position: absolute;
-  height: 100px;
-  top: -40px;
-  left: -120px;
-  transition: left ease-in-out 0.7s;
-  opacity: 0.3;
-}
-
-.cta:hover:before {
-  left: 120%;
-}
-
-
-
-/*EXPLORE PAGE*/
-
-.explore-row {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  text-align: center;
-}
-
-.explore-row h2 {
-  font-size: clamp(14px, 3vw, 36px);
-}
-
-.explore-row img {
-  max-width: clamp(50px, 20vw, 450px);
-  border: var(--border);
-  border-radius: 90%;
-}
-
-.explore1, .explore2, .explore3 {
-  margin: 10px;
-}
-
-.blue-background, .green-background, .site-background, .pink-background {
-  background-color: var(--color-light-blue);
-  padding: 30px 0px;
-}
-
-.green-background {
-  background-color: var(--color-light-green);
-}
-
-.site-background {
-  background-color: var(--color-site-background);
-}
-
-.img-and-text {
-  text-align: center;
-}
-
-.img-and-text p{
-  font-size: clamp(12px, 1vw, 16px);
-  margin-top: 2px;
-}
-
-.img-and-text img, .iandt img {
-  border-radius: 10px;
-}
-
-.text-container {
-  display: flex;
-  flex-direction: row;
-}
-
-.textbox {
-  max-width: 50%;
-  padding: 20px;
-  display: flex;
-  align-items: center;
-}
-
-.textbox p {
-  max-width: 90%;
-}
-
-.iandt {
-  display: flex;
-  flex-direction: row;
-  max-width: 100%;
-  gap: 20px;
-  flex: 1;
-}
-
-
-
-/*EXHIBITION PAGE*/
-
-.link-bar {
-  background-color: var(--color-header-footer);
-  padding: 20px;
-}
-
-.exhibition-links {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  width: 100%;
-  max-width: 100%;
-  height: auto;
-}
-
-.exhibition-links a:hover, .header-nav a:hover {
-  color: #FFF;
-  transform: scale(1.2);
-}
-
-.dt{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.dt h2{
-  margin: 0px 0px 40px 0px;
-}
-
-.cost {
-  min-height: 407px;
-}
-
-.evot {
-  min-height: 360px;
-}
-
-.evot-icon {
-  width: 120px;
-  color: #ffffff;
-}
-
-.robt {
-  min-height: 383px;
-}
-
-
-/*Visit Page*/
-
-.location, .hours {
-  min-height: 406.767px;
-}
-
-.location span {
-  padding: 5px;
-}
-
-.visit {
-  flex: 1 auto 1;
-}
-
-.visit-iandt {
-  display: flex;
-  flex-direction: row;
-}
-
-.visit-iandt h2 {
-  text-align: center;
-}
-
-.contact-form {
-  background-color: var(--color-light-blue);
-  border: var(--border);
-  max-width: 780px;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  margin: auto;
-  padding: 20px 0px;
-}
-
-.contact-form > * {
-  flex: 1;
-}
-
-.fieldset {
-  display: flex;
-  flex-direction: column;
-}
-
-.form-input {
-  display: flex;
-  flex-direction: column;
-  margin: 10px 10px 10px 0px;
-  padding: 10px;
-  align-self: center;
-}
-
-.fieldset label {
-  align-self: center;
-  font-family: Indie Flower;
-}
-
-input, textarea{
-  border-radius: 5px;
-  width: 75%;
-  border: var(--border);
-}
-
-textarea {
-  height: 75%;
-}
-
-.form-cta{
-  max-width: 300px;
-}
-
-.form-button {
-  clear: both;
-}
-
-.form-button {
-  display: flex;
-  justify-content: center;
-  padding: 10px;
-  max-width: 100%;
-}
-
-.newsletter{
-  width: 50px;
-  height: 30px;
-}
-
-
-/*Get Involved Page*/
-.pink-background {
-  background-color: var(--color-light-pink);
-}
-
-
-
-
-
-
-
-
-
-
-
-
-@media (max-width: 1115px){
-
-/*Header*/
-.header-nav a {
-  padding: 12px;
-} 
-
-/*Footer*/
-.footer2 img {
-  max-width: 250px;
-}
-.footer3 img{
-  padding: 10px;
-}
-
-/*Exhibition Site Extra*/
-
-.exhibition-links a {
-  padding: 30px 15px;
-}
-
-
-.cost {
-  min-height: 260px;
-}
-
-.evot {
-  min-height: 310px;
-}
-
-.robt {
-  min-height: 290px;
-}
-
-}
-
-
-@media (max-width: 900px) {
-
-  /*HEADER*/
-  .header-nav a{
-  padding: 9px;
-  }
-
-  /*Exhibition Site Extra*/
-
-.exhibition-links a {
-  padding: 20px 10px;
-  font-size: 20px;
-}
-}
-
-
-  /*TABLET*/
-@media (max-width: 810px) {
-
-
-  /*General Tablet*/
-  html {
-    scroll-padding: 90px;
-  }
-
-.container, .iandt, .text-container{
-  flex-direction: column;
-  gap: 20px;
-}
-
-  /*Header Tablet*/
-nav{
-  display: none;
-}
-
-#menu-checkbox:checked ~ nav {
-  display: block;
-}
-
-header {
-  position: relative;
-  position: sticky;
-  top: 0px;
-}
-
-.header-logo img{
-  margin-left: 0px;
-}
-
-.header-nav {
-  position: absolute;
-  background: var(--color-light-grey);
-  padding: 60px;
-  top: 81px;
-  left: 0px;
-  border: var(--border);
-}
-
-.header-section {
-  justify-content: center;
-  position: sticky;
-  top: 0px;
-}
-
-nav a {
-  display: block;
-}
-
-.header-nav a {
-  padding: 20px 0px;
-  font-size: 36px;
-}
-
-.hamburger-icon {
-  display: block;
-  margin: 20px;
-}
-
-.header-logo {
-  order: 1;
-  margin-right: 40px;
-  display: flex;
-  flex-grow: 1;
-  justify-content: center;
-}
-
-#active {
-  color: var(--color-header-footer);
-  font-size: 40px;
-}
-
-/*Footer Tablet*/
-  .footer-content {  
-    flex-direction: column;
-  }
-
-  .footer1 {
-    order: 1;
-    padding: 20px;
-  }
-
-  .footer3 {
-    order: 2;
-  }
-
-
-/*Main Page Tablet*/
-.link img {
-  max-width: clamp(120px, 40vw, 240px);
-}
-
-.center-text {
-  margin: 20px 40px;
-}
-
-.divider img {
-  padding: 30px 0px;
-  margin: 0px 20px;
-}
-
-.textbox {
-  max-width: 100%;
-  padding: 10px 20px;
-}
-
-/*EXPLORE PAGE*/
-.textbox p {
-  max-width: 100%;
-}
-
-.iandt {
-  align-items: center;
-}
-
-
-/*Exhibition Page Tablet*/
-.exhibition-links a {
-  padding: 15px 10px;
-  font-size: 20px;
-}
-
-.cost {
-  min-height: 260px;
-}
-
-.evot {
-  min-height: 220px;
-}
-
-.robt {
-  min-height: 150px;
-}
-
-
-/*Events Page Tablet*/
-.text h3 {
-  text-align: center;
-}
-
-/*Visit Page Tablet*/
-.textfield-blue {
-  min-width: clamp(280px, 50vw, 500px);
-  max-width: 280px;
-}
-
-.location {
-  min-height: 250px;
-}
-
-.hours {
-  min-height: 360px;
-}
-
-.contact-form {
-  flex-direction: column;
-  margin: 0px 20px;
-}
-
-}
-
-
-
-
-@media (max-width: 620px) { 
-
-/*EXPLORE PAGE*/
-.explore-row {
-  gap: 10px;
-}
-
-.visit-iandt {
-  flex-direction: column;
-}
-
-}
-
-
-
-
-/*MOBILE*/
-  @media (max-width: 400px) {
-
-.cta {
-  padding: 7px 20px;
-}
-
-/*Explore Page Mobile*/
-.explore-row {
-  gap: 5px;
-}
-
-/*Exhibition Page Mobile*/
-.exhibition-links {
-  flex-direction: column;
-  text-align: center;
-}
-
-/*Visit Page Mobile*/
-.textfield-blue {
-  min-width: clamp(120px, 70vw, 280px);
-}
-
-  }
+@import "imports/media.css";
