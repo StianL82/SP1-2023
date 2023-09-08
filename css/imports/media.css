@@ -21,6 +21,7 @@
     padding: 30px 15px;
   }
   
+  
   .cost {
     min-height: 260px;
   }
@@ -32,14 +33,15 @@
   .robt {
     min-height: 290px;
   }
+  
   }
   
   
-  @media (max-width: 900px) {
+  @media (max-width: 920px) {
   
-    /*Header Extra*/
+    /*HEADER*/
     .header-nav a{
-    padding: 9px;
+    padding: 6px;
     }
   
     /*Exhibition Site Extra*/
@@ -78,6 +80,7 @@
     position: relative;
     position: sticky;
     top: 0px;
+    background-color: blue;
   }
   
   .header-logo img{
@@ -213,7 +216,9 @@
     margin: 0px 20px;
   }
   }
-    
+  
+  
+  
   
   @media (max-width: 620px) { 
   
@@ -225,7 +230,8 @@
   .visit-iandt {
     flex-direction: column;
   }
-  } 
+  }
+  
   
   /*MOBILE*/
     @media (max-width: 400px) {
