@@ -32,7 +32,7 @@
   padding: 10px 30px;
   border-radius: 5px;
   text-decoration: none;
-  color: #ffffff;
+  color: var(--color-white);
   font-size: clamp(16px, 2vw, 20px);
   position: relative;
   overflow: hidden;
@@ -41,7 +41,7 @@
 .cta:before {
   content: "";
   padding: 10px;
-  background-color: #FFF;
+  background-color: var(--color-white);
   transform: rotate(45deg);
   position: absolute;
   height: 100px;
