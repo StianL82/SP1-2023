@@ -15,7 +15,7 @@
 }
 
 .exhibition-links a:hover, .header-nav a:hover {
-  color: #FFF;
+  color: var(--color-white);
   transform: scale(1.2);
 }
 
@@ -39,7 +39,7 @@
 
 .evot-icon {
   width: 120px;
-  color: #ffffff;
+  color: var(--color-white);
 }
 
 .robt {
