@@ -1,0 +1,47 @@
+/*EXHIBITION PAGE*/
+
+.link-bar {
+  background-color: var(--color-header-footer);
+  padding: 20px;
+}
+
+.exhibition-links {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+.exhibition-links a:hover, .header-nav a:hover {
+  color: #FFF;
+  transform: scale(1.2);
+}
+
+.dt{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dt h2{
+  margin: 0px 0px 40px 0px;
+}
+
+.cost {
+  min-height: 407px;
+}
+
+.evot {
+  min-height: 360px;
+}
+
+.evot-icon {
+  width: 120px;
+  color: #ffffff;
+}
+
+.robt {
+  min-height: 383px;
+}
