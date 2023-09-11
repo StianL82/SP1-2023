@@ -8,10 +8,6 @@
   padding: 5px;
 }
 
-.visit {
-  flex: 1 auto 1;
-}
-
 .visit-iandt {
   display: flex;
   flex-direction: row;
