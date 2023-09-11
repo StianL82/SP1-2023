@@ -15,8 +15,9 @@
 }
 
 .exhibition-links a:hover, .header-nav a:hover {
-  color: var(--color-white);
+  color: var(--color-light-grey);
   transform: scale(1.2);
+  text-decoration: underline;
 }
 
 .dt{
