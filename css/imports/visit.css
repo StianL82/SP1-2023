@@ -45,7 +45,7 @@
 .form-input {
   display: flex;
   flex-direction: column;
-  margin: 10px 10px 10px 0px;
+  margin: 0px 10px 20px 0px;
   padding: 10px;
   align-self: center;
 }
@@ -55,10 +55,14 @@
   font-family: Indie Flower;
 }
 
-input, textarea{
+input, textarea, select{
   border-radius: 5px;
   width: 75%;
   border: var(--border);
+}
+
+select {
+  width: 80%;
 }
 
 textarea {
