@@ -202,6 +202,10 @@ footer {
   padding: 30px;
 }
 
+footer h2, p {
+  color: var(--color-white);
+}
+
 .footer-content {  
   display: flex;
   align-items: center;
