@@ -173,7 +173,7 @@ header {
 
 .header-nav a, .exhibition-links a{
   padding: 25px;
-  color: var(--color-black);
+  color: var(--color-light-grey);
   text-decoration: none;
   font-size: clamp(18px, 1vw, 24px);
   font-family: Cabin Sketch, Arial, Helvetica, sans-serif;
