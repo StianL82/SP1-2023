@@ -189,7 +189,7 @@ header {
 }
 
 .header-logo img{
-  max-width: clamp(150px, 28vw, 312px);
+  max-width: clamp(150px, 25vw, 300px);
   padding: 10px;
   margin-left: 20px;
 }
