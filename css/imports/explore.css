@@ -12,8 +12,6 @@
 }
 
 .explore-row img {
-  max-width: clamp(50px, 20vw, 450px);
-  border: var(--border);
   border-radius: 90%;
 }
 
