@@ -35,7 +35,7 @@ h3 {
 }
 p {
   font-size: clamp(16px, 2vw, 20px);
-  font-family: 'Lora', Arial, Helvetica, sans-serif;  
+  font-family: 'Lora', Arial, Helvetica, sans-serif; 
 }
 span {
   font-size: clamp(16px, 2vw, 20px);
@@ -202,7 +202,7 @@ footer {
   padding: 30px;
 }
 
-footer h2, p {
+.footer-content h2, .footer-content p, .copy {
   color: var(--color-white);
 }
 
