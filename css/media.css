@@ -98,6 +98,11 @@ nav a {
 .header-nav a {
   padding: 20px 0px;
   font-size: 36px;
+  color: var(--color-black);
+}
+
+.header-nav a:hover {
+  color: var(--color-header-footer);
 }
 
 .hamburger-icon {
