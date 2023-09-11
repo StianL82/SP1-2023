@@ -17,6 +17,11 @@
   text-align: center;
 }
 
+.location, .admission, .hours {
+  display: flex;
+  justify-content: flex-start;
+}
+
 .contact-form {
   background-color: var(--color-light-blue);
   border: var(--border);
