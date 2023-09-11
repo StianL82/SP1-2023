@@ -183,6 +183,7 @@ header {
 #active {
   color: var(--color-white);
   font-size: clamp(23px, 2vw, 28px);
+  text-decoration: underline;
 }
 
 .hamburger-icon, #menu-checkbox {
