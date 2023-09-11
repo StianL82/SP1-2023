@@ -92,11 +92,6 @@ span {
   border: var(--border);
 }
 
-.textfield-blue h2 {
-  display: flex;
-  justify-content: flex-start;
-}
-
 .pink-background {
   background-color: var(--color-light-pink);
 }
