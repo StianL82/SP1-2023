@@ -1,5 +1,5 @@
 /*Events Page*/
 
 .events-h2 {
-  font-family: Indie Flower, Arial, Helvetica, sans-serif;
+  font-family: var(--text-h3)
 }
