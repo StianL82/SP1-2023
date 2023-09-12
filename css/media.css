@@ -1,16 +1,15 @@
-
 /*MEDIA QUERIES*/
 
 @media (max-width: 1115px){
 
 .header-nav a {
-  padding: 12px;
+  padding: 16px;
 } 
 
-.footer2 img {
+.footer-logo img {
   max-width: 250px;
 }
-.footer3 img{
+.social-icons img{
   padding: 10px;
 }
 
@@ -127,16 +126,16 @@ nav a {
   flex-direction: column;
 }
 
-.footer1 {
+.contact-info {
   order: 1;
   padding: 20px;
 }
 
-.footer3 {
+.social-icons {
   order: 2;
 }
 
-.footer2 img {
+.footer-logo img {
   max-width: 200px;
 }
 
