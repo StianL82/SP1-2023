@@ -52,7 +52,7 @@
 
 .fieldset label {
   align-self: center;
-  font-family: Indie Flower;
+  font-family: var(--text-h3)
 }
 
 input, textarea, select{
