@@ -5,7 +5,11 @@
   --color-light-grey: #D9D9D9;
   --color-light-green: #BCEDBE;
   --color-header-footer: #215C69;
-  --border: 1px solid #000;
   --color-white: #FFFFFF;
   --color-black: #000000;
-  }
+  --border: 1px solid #000;
+  --text-h1: Vollkorn SC, Arial, Helvetica, sans-serif;
+  --text-h2: Cabin Sketch, Arial, Helvetica, sans-serif;
+  --text-h3: Indie Flower, Arial, Helvetica, sans-serif;
+  --text-p-and-span: 'Lora', Arial, Helvetica, sans-serif;
+}
