@@ -15,21 +15,8 @@
   border-radius: 90%;
 }
 
-.explore1, .explore2, .explore3 {
+.for-kids, .for-teachers, .for-researchers {
   margin: 10px;
-}
-
-.blue-background, .green-background, .site-background, .pink-background {
-  background-color: var(--color-light-blue);
-  padding: 30px 0px;
-}
-
-.green-background {
-  background-color: var(--color-light-green);
-}
-
-.site-background {
-  background-color: var(--color-site-background);
 }
 
 .img-and-text {
