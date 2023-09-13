@@ -3,7 +3,6 @@
 @import "imports/explore.css";
 @import "imports/exhibition.css";
 @import "imports/visit.css";
-@import "imports/events.css";
 @import "imports/contact.css";
 
 
@@ -31,7 +30,7 @@ h2 {
   font-size: clamp(24px, 3vw, 36px);
   font-family: var(--text-h2);
 }
-h3 {
+h3, .contact-h2, .events-h2 {
   font-size: clamp(16px, 2vw, 24px);
   font-family: var(--text-h3);
 }
