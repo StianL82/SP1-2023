@@ -54,9 +54,3 @@
 .cta:hover:before {
   left: 120%;
 }
-
-.visit-cta {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-}
