@@ -78,8 +78,8 @@ header {
 .header-nav {
   position: absolute;
   background: var(--color-light-grey);
-  padding: 60px;
-  top: 81px;
+  padding: 40px;
+  top: 82px;
   left: 0px;
   border: var(--border);
 }
@@ -90,14 +90,18 @@ header {
   top: 0px;
 }
 
-nav a {
+.header-section ul {
   display: block;
 }
 
-.header-nav a {
-  padding: 20px 0px;
+.header-nav li {
+  padding: 15px 0px;
+}
+
+.header-nav a{
   font-size: 36px;
   color: var(--color-black);
+  ;
 }
 
 .header-nav a:hover {
