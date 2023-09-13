@@ -263,3 +263,7 @@ footer {
 .contact-info h2 {
   text-align: center;
 }
+
+.footer-contact-link {
+  text-decoration: none;
+}
