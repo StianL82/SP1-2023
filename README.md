@@ -1,6 +1,6 @@
 # Semester Project 1
 
-![image](/Images/Design/Logo.png)
+![image](/Images/Design/Logo_plain.png)
 
 ## B.C.S.M - Brønnøysund Community Science Museum
 
