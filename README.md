@@ -1,4 +1,6 @@
-# B.C.S.M - Brønnøysund Community Science Museum
+# Semester Project 1
+
+## B.C.S.M - Brønnøysund Community Science Museum
 
 ![image](/Images/readme/screencapture-stian-li-sp1-2023-netlify-app-2024-02-19-17_55_08-min%201-min.png)
 
