@@ -1,7 +1,5 @@
 # Semester Project 1
 
-![image](/Images/Design/Logo_plain.png)
-
 ## B.C.S.M - Brønnøysund Community Science Museum 🦴
 
 ![image](/Images/readme/screencapture-stian-li-sp1-2023-netlify-app-2024-02-19-17_55_08-min%201-min.png)
@@ -10,7 +8,7 @@ Welcome to B.C.S.M, the fictional museum you always wanted to visit 😄
 
 ## Visit the page at:
 
-https://stian-li-sp1-2023.netlify.app/
+[![B.C.S.M](/Images/Design/Logo_plain.png)](https://stian-li-sp1-2023.netlify.app/)
 
 ## Description
 
