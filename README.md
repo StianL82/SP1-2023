@@ -21,7 +21,7 @@ This page was built for our semester project 1. The task was to build a fictiona
 Clone the repo:
 
 ```
-git clone git@github.com:StianL82/SP1-2023.git
+git clone git@github.com/StianL82/SP1-2023.git
 ```
 
 ### Running
