@@ -34,6 +34,6 @@ git clone git@github.com/StianL82/SP1-2023.git
 
 Open with live server, or open in browser [Link to page](https://stian-li-sp1-2023.netlify.app/).
 
-## Contact
+## Contact 📫
 
 Feel free to contact me at stian.lilleng@gmail.com
